@@ -19,7 +19,7 @@ class MangoBarLayout: TMBarLayout {
     
     private struct Defaults {
         // 디폴트 컨텐츠 인셋 설정
-        static let contentInset = UIEdgeInsets(top: 4, left: 0, bottom: 10, right: 0)
+        static let contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     }
     
     // MARK: Properties

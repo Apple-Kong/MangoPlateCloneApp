@@ -29,6 +29,7 @@
 		C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306C2774699900BAE73C /* MangoBarButton.swift */; };
 		C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306E2774AE3000BAE73C /* TinderColors.swift */; };
 		C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */; };
+		C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C07B306C2774699900BAE73C /* MangoBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButton.swift; sourceTree = "<group>"; };
 		C07B306E2774AE3000BAE73C /* TinderColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderColors.swift; sourceTree = "<group>"; };
 		C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarIndicator.swift; sourceTree = "<group>"; };
+		C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneAppTests/Pods-MangoPlateCloneAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,8 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				C07B30652774692200BAE73C /* TabBar */,
+				C0F636A92774E53600070CEA /* First */,
 				C02AD0CB2774455B00FB9836 /* ViewController.swift */,
-				C07B305827745D7300BAE73C /* FirstVC.swift */,
 				C07B305A27745DBD00BAE73C /* SecondVC.swift */,
 				C07B305C27745DC700BAE73C /* ThirdVC.swift */,
 				C07B306327745F3000BAE73C /* FourthVC.swift */,
@@ -227,6 +229,15 @@
 				C07B306C2774699900BAE73C /* MangoBarButton.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C0F636A92774E53600070CEA /* First */ = {
+			isa = PBXGroup;
+			children = (
+				C07B305827745D7300BAE73C /* FirstVC.swift */,
+				C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */,
+			);
+			path = First;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +486,7 @@
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
 				C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */,
 				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,
+				C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */,
 				C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */,
 				C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */,
 				C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */,

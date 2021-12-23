@@ -9,6 +9,7 @@ import Tabman
 
 class MangoBar {
     
+    //타입 자체가 템플릿이 달라서 인디케이터가 보이지 않음
     typealias BarType = TMBarView<MangoBarLayout, MangoBarButton, MangoBarIndicator>
     
     static func make() -> TMBar {
@@ -20,6 +21,8 @@ class MangoBar {
             button.tintColor = TinderColors.primaryTint
             button.unselectedTintColor = TinderColors.unselectedGray
         }
+        
+        
         
         bar.layout.transitionStyle = .snap
         
