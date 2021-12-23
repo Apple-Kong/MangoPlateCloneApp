@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondVC.swift
 //  MangoPlateCloneApp
 //
 //  Created by GOngTAE on 2021/12/23.
@@ -7,13 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="-558"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="xPa-aq-e88">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="gmG-xc-4Pa" customClass="FirstVC" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="moX-kn-VPE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG6-81-RY5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 보고있는 지역은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tW9-AK-G4n">
+                                        <rect key="frame" x="20" y="0.0" width="292" height="13.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICg-b9-HRS">
+                                        <rect key="frame" x="12" y="23" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="trailing" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzD-Uy-YTN">
+                                        <rect key="frame" x="8" y="13.5" width="89" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="oLb-0M-gai"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="부천시">
+                                            <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DN-Uw-4go">
+                                        <rect key="frame" x="368" y="12" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5DN-Uw-4go" secondAttribute="height" multiplier="1:1" id="7JB-B9-5NR"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" imageContentMode="center">
+                                                <imageReference key="image" image="map" catalog="system" symbolScale="large"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMc-ul-ypt">
+                                        <rect key="frame" x="332" y="12" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LMc-ul-ypt" secondAttribute="height" multiplier="1:1" id="Hr6-AC-SrV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" imageContentMode="center">
+                                                <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5DN-Uw-4go" secondAttribute="bottom" constant="12" id="El3-wJ-7g9"/>
+                                    <constraint firstItem="5DN-Uw-4go" firstAttribute="leading" secondItem="LMc-ul-ypt" secondAttribute="trailing" constant="10" id="R0G-Sg-wME"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ww3-0s-l7t"/>
+                                    <constraint firstAttribute="trailing" secondItem="5DN-Uw-4go" secondAttribute="trailing" constant="20" id="a9e-yw-r3B"/>
+                                    <constraint firstItem="LMc-ul-ypt" firstAttribute="bottom" secondItem="5DN-Uw-4go" secondAttribute="bottom" id="eKn-qU-uAx"/>
+                                    <constraint firstItem="XzD-Uy-YTN" firstAttribute="leading" secondItem="UG6-81-RY5" secondAttribute="leading" constant="8" id="fSS-Cs-PeJ"/>
+                                    <constraint firstItem="LMc-ul-ypt" firstAttribute="leading" secondItem="tW9-AK-G4n" secondAttribute="trailing" constant="20" id="fcG-Lv-wCz"/>
+                                    <constraint firstItem="XzD-Uy-YTN" firstAttribute="top" secondItem="tW9-AK-G4n" secondAttribute="bottom" id="nKV-BM-Un6"/>
+                                    <constraint firstItem="LMc-ul-ypt" firstAttribute="top" secondItem="5DN-Uw-4go" secondAttribute="top" id="nSO-jU-mpK"/>
+                                    <constraint firstItem="5DN-Uw-4go" firstAttribute="top" secondItem="UG6-81-RY5" secondAttribute="top" constant="12" id="rGP-an-Xkm"/>
+                                    <constraint firstItem="tW9-AK-G4n" firstAttribute="top" secondItem="UG6-81-RY5" secondAttribute="top" id="yFA-3A-aKp"/>
+                                    <constraint firstItem="tW9-AK-G4n" firstAttribute="leading" secondItem="UG6-81-RY5" secondAttribute="leading" constant="20" id="yku-7O-n8U"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k1h-NI-b36">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YpY-K7-3uu">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2ez-Wl-Vrj">
+                                        <rect key="frame" x="0.0" y="50" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tcG-Xx-Upd">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reusableView" id="bDr-k1-4qe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.021180300039999999" green="0.51112627980000003" blue="0.31361842159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EwC-fa-c4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UG6-81-RY5" firstAttribute="leading" secondItem="EwC-fa-c4e" secondAttribute="leading" id="A5N-cw-55d"/>
+                            <constraint firstItem="EwC-fa-c4e" firstAttribute="trailing" secondItem="k1h-NI-b36" secondAttribute="trailing" id="APh-8Y-aVt"/>
+                            <constraint firstItem="k1h-NI-b36" firstAttribute="leading" secondItem="EwC-fa-c4e" secondAttribute="leading" id="Fd5-Zq-DDx"/>
+                            <constraint firstAttribute="bottom" secondItem="k1h-NI-b36" secondAttribute="bottom" id="XuR-BI-rRq"/>
+                            <constraint firstItem="k1h-NI-b36" firstAttribute="top" secondItem="UG6-81-RY5" secondAttribute="bottom" id="ZAI-IL-fzR"/>
+                            <constraint firstItem="UG6-81-RY5" firstAttribute="top" secondItem="EwC-fa-c4e" secondAttribute="top" id="bA0-ud-vNo"/>
+                            <constraint firstItem="EwC-fa-c4e" firstAttribute="trailing" secondItem="UG6-81-RY5" secondAttribute="trailing" id="bej-HD-D71"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbC-bY-ZdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801.44927536231887" y="-1246.2053571428571"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="flN-QL-TJC">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="Ehe-Fx-cQW" customClass="SecondVC" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S7W-as-wLY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xWl-dR-Ckh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8N5-Kl-Tk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="-1246"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="ohU-dG-SiK">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" id="dx0-jM-DCs" customClass="ThirdVC" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKg-33-Bqf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xAO-iB-hfy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzY-jD-cp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-1246"/>
+        </scene>
+        <!--FourthVC-->
+        <scene sceneID="d7N-7q-GJi">
+            <objects>
+                <viewController storyboardIdentifier="FourthVC" id="auN-Sv-bJE" customClass="FourthVC" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhN-GN-GIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QME-UQ-SLS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U5-VP-bBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1433" y="-1246"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

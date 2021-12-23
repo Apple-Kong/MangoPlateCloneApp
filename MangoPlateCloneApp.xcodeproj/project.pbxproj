@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4458FDC0D4A12FB0D59DA310 /* Pods_MangoPlateCloneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */; };
+		7609D6A94985CA275D7EE276 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */; };
+		B0E293791DD8FFA29398EBF1 /* Pods_MangoPlateCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AF056C73757E337DFF38C4 /* Pods_MangoPlateCloneApp.framework */; };
 		C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C72774455B00FB9836 /* AppDelegate.swift */; };
 		C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C92774455B00FB9836 /* SceneDelegate.swift */; };
 		C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0CB2774455B00FB9836 /* ViewController.swift */; };
@@ -16,6 +19,16 @@
 		C02AD0DF2774455D00FB9836 /* MangoPlateCloneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0DE2774455D00FB9836 /* MangoPlateCloneAppTests.swift */; };
 		C02AD0E92774455D00FB9836 /* MangoPlateCloneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0E82774455D00FB9836 /* MangoPlateCloneAppUITests.swift */; };
 		C02AD0EB2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0EA2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift */; };
+		C07B305927745D7300BAE73C /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305827745D7300BAE73C /* FirstVC.swift */; };
+		C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305A27745DBD00BAE73C /* SecondVC.swift */; };
+		C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305C27745DC700BAE73C /* ThirdVC.swift */; };
+		C07B306427745F3000BAE73C /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306327745F3000BAE73C /* FourthVC.swift */; };
+		C07B30672774693C00BAE73C /* MangoBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30662774693C00BAE73C /* MangoBar.swift */; };
+		C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30682774697500BAE73C /* MangoBarLayout.swift */; };
+		C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */; };
+		C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306C2774699900BAE73C /* MangoBarButton.swift */; };
+		C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306E2774AE3000BAE73C /* TinderColors.swift */; };
+		C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CAB6B1C4E2BCF545666148D /* Pods-MangoPlateCloneAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneAppTests.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneAppTests/Pods-MangoPlateCloneAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		418242723B8BC37BA7B57BDD /* Pods-MangoPlateCloneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp.debug.xcconfig"; sourceTree = "<group>"; };
+		43766B6A565E2841F0FE45D7 /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		43AF056C73757E337DFF38C4 /* Pods_MangoPlateCloneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B300AB3379FDB1CB5599E25A /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C02AD0C42774455B00FB9836 /* MangoPlateCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoPlateCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0C72774455B00FB9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02AD0C92774455B00FB9836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,18 @@
 		C02AD0E42774455D00FB9836 /* MangoPlateCloneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoPlateCloneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0E82774455D00FB9836 /* MangoPlateCloneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPlateCloneAppUITests.swift; sourceTree = "<group>"; };
 		C02AD0EA2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPlateCloneAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C07B305827745D7300BAE73C /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		C07B305A27745DBD00BAE73C /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		C07B305C27745DC700BAE73C /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		C07B306327745F3000BAE73C /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		C07B30662774693C00BAE73C /* MangoBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBar.swift; sourceTree = "<group>"; };
+		C07B30682774697500BAE73C /* MangoBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarLayout.swift; sourceTree = "<group>"; };
+		C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButtonContainer.swift; sourceTree = "<group>"; };
+		C07B306C2774699900BAE73C /* MangoBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButton.swift; sourceTree = "<group>"; };
+		C07B306E2774AE3000BAE73C /* TinderColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderColors.swift; sourceTree = "<group>"; };
+		C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarIndicator.swift; sourceTree = "<group>"; };
+		C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneAppTests/Pods-MangoPlateCloneAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E293791DD8FFA29398EBF1 /* Pods_MangoPlateCloneApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4458FDC0D4A12FB0D59DA310 /* Pods_MangoPlateCloneAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609D6A94985CA275D7EE276 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9C4EC97A14DEB4C8F3D16F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				418242723B8BC37BA7B57BDD /* Pods-MangoPlateCloneApp.debug.xcconfig */,
+				E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */,
+				B300AB3379FDB1CB5599E25A /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig */,
+				43766B6A565E2841F0FE45D7 /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.release.xcconfig */,
+				C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */,
+				0CAB6B1C4E2BCF545666148D /* Pods-MangoPlateCloneAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4DFE251FF2D1C2A66DC5232 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43AF056C73757E337DFF38C4 /* Pods_MangoPlateCloneApp.framework */,
+				92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */,
+				961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C02AD0BB2774455B00FB9836 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +141,8 @@
 				C02AD0DD2774455D00FB9836 /* MangoPlateCloneAppTests */,
 				C02AD0E72774455D00FB9836 /* MangoPlateCloneAppUITests */,
 				C02AD0C52774455B00FB9836 /* Products */,
+				4C9C4EC97A14DEB4C8F3D16F /* Pods */,
+				B4DFE251FF2D1C2A66DC5232 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +161,10 @@
 			children = (
 				C02AD0C72774455B00FB9836 /* AppDelegate.swift */,
 				C02AD0C92774455B00FB9836 /* SceneDelegate.swift */,
-				C02AD0CB2774455B00FB9836 /* ViewController.swift */,
-				C02AD0CD2774455B00FB9836 /* Main.storyboard */,
-				C02AD0D02774455D00FB9836 /* Assets.xcassets */,
-				C02AD0D22774455D00FB9836 /* LaunchScreen.storyboard */,
 				C02AD0D52774455D00FB9836 /* Info.plist */,
+				C07B306027745DD900BAE73C /* Model */,
+				C07B306127745DEA00BAE73C /* View */,
+				C07B306227745DF200BAE73C /* Controllers */,
 			);
 			path = MangoPlateCloneApp;
 			sourceTree = "<group>";
@@ -127,6 +186,49 @@
 			path = MangoPlateCloneAppUITests;
 			sourceTree = "<group>";
 		};
+		C07B306027745DD900BAE73C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C07B306127745DEA00BAE73C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C02AD0D02774455D00FB9836 /* Assets.xcassets */,
+				C02AD0CD2774455B00FB9836 /* Main.storyboard */,
+				C02AD0D22774455D00FB9836 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C07B306227745DF200BAE73C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C07B30652774692200BAE73C /* TabBar */,
+				C02AD0CB2774455B00FB9836 /* ViewController.swift */,
+				C07B305827745D7300BAE73C /* FirstVC.swift */,
+				C07B305A27745DBD00BAE73C /* SecondVC.swift */,
+				C07B305C27745DC700BAE73C /* ThirdVC.swift */,
+				C07B306327745F3000BAE73C /* FourthVC.swift */,
+				C07B306E2774AE3000BAE73C /* TinderColors.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C07B30652774692200BAE73C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C07B30662774693C00BAE73C /* MangoBar.swift */,
+				C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */,
+				C07B30682774697500BAE73C /* MangoBarLayout.swift */,
+				C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */,
+				C07B306C2774699900BAE73C /* MangoBarButton.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C02AD0EE2774455D00FB9836 /* Build configuration list for PBXNativeTarget "MangoPlateCloneApp" */;
 			buildPhases = (
+				F11E9F3124BE6738D358D855 /* [CP] Check Pods Manifest.lock */,
 				C02AD0C02774455B00FB9836 /* Sources */,
 				C02AD0C12774455B00FB9836 /* Frameworks */,
 				C02AD0C22774455B00FB9836 /* Resources */,
+				41939031DFEE5B11E252CEE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C02AD0F12774455D00FB9836 /* Build configuration list for PBXNativeTarget "MangoPlateCloneAppTests" */;
 			buildPhases = (
+				DBD209FDB84A6807A0690959 /* [CP] Check Pods Manifest.lock */,
 				C02AD0D62774455D00FB9836 /* Sources */,
 				C02AD0D72774455D00FB9836 /* Frameworks */,
 				C02AD0D82774455D00FB9836 /* Resources */,
@@ -169,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C02AD0F42774455D00FB9836 /* Build configuration list for PBXNativeTarget "MangoPlateCloneAppUITests" */;
 			buildPhases = (
+				9339D85410712B50119C88B6 /* [CP] Check Pods Manifest.lock */,
 				C02AD0E02774455D00FB9836 /* Sources */,
 				C02AD0E12774455D00FB9836 /* Frameworks */,
 				C02AD0E22774455D00FB9836 /* Resources */,
+				B0EAAE3F309A9D739CC49C4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +360,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41939031DFEE5B11E252CEE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9339D85410712B50119C88B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0EAAE3F309A9D739CC49C4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD209FDB84A6807A0690959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoPlateCloneAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F11E9F3124BE6738D358D855 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MangoPlateCloneApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C02AD0C02774455B00FB9836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07B30672774693C00BAE73C /* MangoBar.swift in Sources */,
+				C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */,
+				C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */,
+				C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */,
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
+				C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */,
+				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,
+				C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */,
 				C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */,
+				C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */,
+				C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */,
+				C07B306427745F3000BAE73C /* FourthVC.swift in Sources */,
 				C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +654,7 @@
 		};
 		C02AD0EF2774455D00FB9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418242723B8BC37BA7B57BDD /* Pods-MangoPlateCloneApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +683,7 @@
 		};
 		C02AD0F02774455D00FB9836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +712,7 @@
 		};
 		C02AD0F22774455D00FB9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +738,7 @@
 		};
 		C02AD0F32774455D00FB9836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CAB6B1C4E2BCF545666148D /* Pods-MangoPlateCloneAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +764,7 @@
 		};
 		C02AD0F52774455D00FB9836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B300AB3379FDB1CB5599E25A /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +788,7 @@
 		};
 		C02AD0F62774455D00FB9836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43766B6A565E2841F0FE45D7 /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
