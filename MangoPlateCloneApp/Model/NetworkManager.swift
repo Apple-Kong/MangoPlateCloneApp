@@ -13,7 +13,7 @@ class NetworkManager {
     let parameters: [String: [String]] = [
         "x": ["127.06283102249932"],
         "y": ["37.514322572335935"],
-        "query": ["맛집"]
+        "query": ["강남 맛집"]
     ]
     
     let kakaoHeaders: HTTPHeaders = [
@@ -25,11 +25,13 @@ class NetworkManager {
         "X-Naver-Client-Secret" : "YlEqSjADOZ"
     ]
     
-    var restaurants: [Restaurant]?
+    
     
     
     //맛집 리스트 불러오는 함수.
-    func fetchRestaurants() {
+    func fetchRestaurants(completion: @escaping ([Restaurant]) -> Void) {
+        
+        var restaurants: [Restaurant] = []
         
         AF.request("https://dapi.kakao.com/v2/local/search/keyword.json", method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: kakaoHeaders)
             .validate()
@@ -37,12 +39,11 @@ class NetworkManager {
 
                 switch response.result {
                 case .success:
-                    print("decoded successful")
+                    print("🌊🌊🌊 Kakao decoded successful")
                     if let restaurantList = response.value?.documents {
-                        self.restaurants = restaurantList
-                        
+                        restaurants = restaurantList
+                        completion(restaurants)
                     }
-                    
                 case let .failure(error):
                     print(error)
                 }
@@ -53,7 +54,7 @@ class NetworkManager {
     
     
     //주소와 이름을 통해  이미지 URL 불러오는 함수.
-    func fetchImage(roadAddressName: String, place_name: String) -> String? {
+    func fetchImage(roadAddressName: String, place_name: String, completion: @escaping (String) -> Void) {
         
         let params = [
             // 검색어를 가게 이름 + 주소로 설정
@@ -64,23 +65,18 @@ class NetworkManager {
             "sort" : "sim"
         ]
         
-        print(params)
-        
-        var imageURL: String?
-        
         AF.request("https://openapi.naver.com/v1/search/image", method: .get, parameters: params, encoder: URLEncodedFormParameterEncoder.default, headers: naverHeaders)
             .validate()
             .responseDecodable(of: NaverData.self) { response in
                 switch response.result {
                 case .success:
-                    print("decoded naver successful")
+                    print("🌊🌊🌊 naver decoded  successful")
                     if let link = response.value?.items[0].link {
-                        imageURL = link
+                        completion(link)
                     }
                 case let .failure(error):
                     print(error)
                 }
             }
-        return imageURL
     }
 }
