@@ -20,6 +20,10 @@ class FirstCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        print(self.titleLabel.text)
+        
     
     }
+    
+    
 }

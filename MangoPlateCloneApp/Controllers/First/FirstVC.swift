@@ -10,6 +10,8 @@ import Alamofire
 
 class FirstVC: UIViewController {
     
+    
+    
     @IBOutlet weak var firstCollectionView: UICollectionView!
     
     let parameters: [String: [String]] = [
@@ -22,6 +24,14 @@ class FirstVC: UIViewController {
         "Authorization": "KakaoAK 98b807749ed5ea240799ffe5ae51b1b4"
     ]
     
+    let naverHeaders: HTTPHeaders = [
+        "X-Naver-Client-Id" : "UnEPRBm5dkfZ_8EXRe8I",
+        "X-Naver-Client-Secret" : "YlEqSjADOZ"
+    ]
+    
+    
+    var Restaurants: [Restaurant] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,29 +40,79 @@ class FirstVC: UIViewController {
         
         AF.request("https://dapi.kakao.com/v2/local/search/keyword.json", method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: headers)
             .validate()
-            .responseString { response in
-                
-                
+            .responseDecodable(of: KakaoData.self) { response in
+
                 switch response.result {
                 case .success:
-                    print("success")
-                    print(response)
+                    print("decoded successful")
+                    if let restaurantList = response.value?.documents {
+                        self.Restaurants = restaurantList
+                        
+//                        for restaurant in restaurantList {
+//                            
+//                        }
+                        self.firstCollectionView.reloadData()
+                    }
+                    
                 case let .failure(error):
                     print(error)
                 }
-        }
+                
+                
+            }
+        
+        
+        
+        
     }
 }
 
 
 extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return Restaurants.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath) as! FirstCollectionViewCell
+        
+        let name = Restaurants[indexPath.row].place_name
+        let roadAddressName = Restaurants[indexPath.row].road_address_name
+        
+        cell.titleLabel.text = name
+        
+        let params = [
+            "query" : "\(roadAddressName) \(name)"
+        ]
+        
+        print(params)
+        
+        AF.request("https://openapi.naver.com/v1/search/image", method: .get, parameters: params, encoder: URLEncodedFormParameterEncoder.default, headers: naverHeaders)
+            .validate()
+            .responseDecodable(of: NaverData.self) { response in
+                switch response.result {
+                case .success:
+                    print("decoded naver successful")
+                    if let link = response.value?.items[0].link {
+                        print("URL 링크는 \(link)")
+                        let url = URL(string: link)
+                        do {
+                            let data = try Data(contentsOf: url!)
+                            cell.imageView1.image = UIImage(data: data)
+                            print("성공적인 이미지 적용")
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                        
+                        
+                    }
+
+                case let .failure(error):
+                    print(error)
+                }
+                
+            }
         
         return cell
     }
@@ -67,6 +127,10 @@ extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
         default:
             assert(false, "놉")
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
     }
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
