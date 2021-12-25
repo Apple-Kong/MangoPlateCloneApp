@@ -6,10 +6,21 @@
 //
 
 import UIKit
+import Alamofire
 
 class FirstVC: UIViewController {
     
     @IBOutlet weak var firstCollectionView: UICollectionView!
+    
+    let parameters: [String: [String]] = [
+        "x": ["127.06283102249932"],
+        "y": ["37.514322572335935"],
+        "query": ["강남 맛집"]
+    ]
+    
+    let headers: HTTPHeaders = [
+        "Authorization": "KakaoAK 98b807749ed5ea240799ffe5ae51b1b4"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +28,19 @@ class FirstVC: UIViewController {
         firstCollectionView.delegate = self
         firstCollectionView.dataSource = self
         
-        
+        AF.request("https://dapi.kakao.com/v2/local/search/keyword.json", method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: headers)
+            .validate()
+            .responseString { response in
+                
+                
+                switch response.result {
+                case .success:
+                    print("success")
+                    print(response)
+                case let .failure(error):
+                    print(error)
+                }
+        }
     }
 }
 

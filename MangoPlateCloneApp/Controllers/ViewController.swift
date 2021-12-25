@@ -39,22 +39,22 @@ class ViewController: TabmanViewController {
 }
 
 extension ViewController: PageboyViewControllerDataSource, TMBarDataSource {
-    func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return viewControllers.count
+        func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
+            return viewControllers.count
+        }
+        
+        func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
+            return viewControllers[index]
+        }
+        
+        func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
+            return .at(index: 0)
+        }
+        
+        func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
+            return tabItems[index]
+        }
     }
-    
-    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return viewControllers[index]
-    }
-    
-    func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return .at(index: 0)
-    }
-    
-    func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        return tabItems[index]
-    }
-}
 
 
 
