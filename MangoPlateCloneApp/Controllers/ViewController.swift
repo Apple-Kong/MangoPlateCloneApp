@@ -31,8 +31,11 @@ class ViewController: TabmanViewController {
         
         self.dataSource = self
 //        isScrollEnabled = false
+        let systemBar = MangoBar.make().systemBar()
         
-        addBar(MangoBar.make(), dataSource: self, at: .bottom)
+        systemBar.backgroundStyle = .flat(color: .white)
+        
+        addBar(systemBar, dataSource: self, at: .bottom)
     }
 
 

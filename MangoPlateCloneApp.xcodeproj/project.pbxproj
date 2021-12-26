@@ -13,6 +13,7 @@
 		C014A3C227776D0800F85CE4 /* KakaoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C127776D0800F85CE4 /* KakaoData.swift */; };
 		C014A3C4277777EE00F85CE4 /* NaverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C3277777EE00F85CE4 /* NaverData.swift */; };
 		C014A3C62777821E00F85CE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C52777821E00F85CE4 /* NetworkManager.swift */; };
+		C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A9022778194F0072BFE3 /* RestInfo.swift */; };
 		C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C72774455B00FB9836 /* AppDelegate.swift */; };
 		C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C92774455B00FB9836 /* SceneDelegate.swift */; };
 		C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0CB2774455B00FB9836 /* ViewController.swift */; };
@@ -32,7 +33,11 @@
 		C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306C2774699900BAE73C /* MangoBarButton.swift */; };
 		C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306E2774AE3000BAE73C /* TinderColors.swift */; };
 		C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */; };
+		C08DED0C277876050054A1C4 /* FirstCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */; };
 		C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */; };
+		C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569B27788C210000B753 /* EATViewcontroller.swift */; };
+		C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569D27788C2B0000B753 /* StoryViewController.swift */; };
+		C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569F27788C360000B753 /* TOPViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,7 @@
 		C014A3C127776D0800F85CE4 /* KakaoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoData.swift; sourceTree = "<group>"; };
 		C014A3C3277777EE00F85CE4 /* NaverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverData.swift; sourceTree = "<group>"; };
 		C014A3C52777821E00F85CE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C020A9022778194F0072BFE3 /* RestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInfo.swift; sourceTree = "<group>"; };
 		C02AD0C42774455B00FB9836 /* MangoPlateCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoPlateCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0C72774455B00FB9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C02AD0C92774455B00FB9836 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +92,11 @@
 		C07B306C2774699900BAE73C /* MangoBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButton.swift; sourceTree = "<group>"; };
 		C07B306E2774AE3000BAE73C /* TinderColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderColors.swift; sourceTree = "<group>"; };
 		C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarIndicator.swift; sourceTree = "<group>"; };
+		C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewHeader.swift; sourceTree = "<group>"; };
 		C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0FC569B27788C210000B753 /* EATViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EATViewcontroller.swift; sourceTree = "<group>"; };
+		C0FC569D27788C2B0000B753 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		C0FC569F27788C360000B753 /* TOPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOPViewController.swift; sourceTree = "<group>"; };
 		C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneAppTests/Pods-MangoPlateCloneAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +210,7 @@
 				C014A3C127776D0800F85CE4 /* KakaoData.swift */,
 				C014A3C3277777EE00F85CE4 /* NaverData.swift */,
 				C014A3C52777821E00F85CE4 /* NetworkManager.swift */,
+				C020A9022778194F0072BFE3 /* RestInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,10 +228,10 @@
 		C07B306227745DF200BAE73C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C0FC569A27788C040000B753 /* Second */,
 				C07B30652774692200BAE73C /* TabBar */,
 				C0F636A92774E53600070CEA /* First */,
 				C02AD0CB2774455B00FB9836 /* ViewController.swift */,
-				C07B305A27745DBD00BAE73C /* SecondVC.swift */,
 				C07B305C27745DC700BAE73C /* ThirdVC.swift */,
 				C07B306327745F3000BAE73C /* FourthVC.swift */,
 				C07B306E2774AE3000BAE73C /* TinderColors.swift */,
@@ -245,8 +256,20 @@
 			children = (
 				C07B305827745D7300BAE73C /* FirstVC.swift */,
 				C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */,
+				C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		C0FC569A27788C040000B753 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				C07B305A27745DBD00BAE73C /* SecondVC.swift */,
+				C0FC569B27788C210000B753 /* EATViewcontroller.swift */,
+				C0FC569D27788C2B0000B753 /* StoryViewController.swift */,
+				C0FC569F27788C360000B753 /* TOPViewController.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,17 +515,22 @@
 				C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */,
 				C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */,
 				C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */,
+				C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */,
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
+				C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */,
 				C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */,
 				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,
 				C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */,
 				C014A3C4277777EE00F85CE4 /* NaverData.swift in Sources */,
 				C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */,
 				C014A3C62777821E00F85CE4 /* NetworkManager.swift in Sources */,
+				C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */,
 				C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */,
 				C014A3C227776D0800F85CE4 /* KakaoData.swift in Sources */,
 				C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */,
+				C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */,
 				C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */,
+				C08DED0C277876050054A1C4 /* FirstCollectionViewHeader.swift in Sources */,
 				C07B306427745F3000BAE73C /* FourthVC.swift in Sources */,
 				C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */,
 			);

@@ -64,8 +64,8 @@ class NetworkManager {
             // 유사도 순으로 정렬
             "sort" : "sim"
         ]
-        
         AF.request("https://openapi.naver.com/v1/search/image", method: .get, parameters: params, encoder: URLEncodedFormParameterEncoder.default, headers: naverHeaders)
+            
             .validate()
             .responseDecodable(of: NaverData.self) { response in
                 switch response.result {
@@ -76,7 +76,11 @@ class NetworkManager {
                     }
                 case let .failure(error):
                     print(error)
+                    completion("fail")
                 }
             }
     }
 }
+
+
+

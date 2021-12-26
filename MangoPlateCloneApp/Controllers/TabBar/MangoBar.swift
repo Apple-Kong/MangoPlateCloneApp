@@ -23,7 +23,7 @@ class MangoBar {
         }
         
         bar.backgroundView.style = .flat(color: .white)
-        
+        bar.backgroundColor = .white
         
         bar.layout.transitionStyle = .snap
         

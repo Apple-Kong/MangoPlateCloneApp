@@ -1,13 +1,13 @@
 //
-//  SecondVC.swift
+//  EATViewcontroller.swift
 //  MangoPlateCloneApp
 //
-//  Created by GOngTAE on 2021/12/23.
+//  Created by GOngTAE on 2021/12/26.
 //
 
 import UIKit
 
-class SecondVC: UIViewController {
+class EATViewControllerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
