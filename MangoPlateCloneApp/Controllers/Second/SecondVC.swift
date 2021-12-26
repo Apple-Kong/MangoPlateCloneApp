@@ -10,8 +10,7 @@ import Tabman
 import Pageboy
 
 class SecondVC: TabmanViewController {
-    
-    
+
     let tabName = ["EAT딜", "스토리", "Top리스트"]
     
     private var viewControllers: Array<UIViewController> = []
@@ -21,12 +20,15 @@ class SecondVC: TabmanViewController {
         
         let vc1 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EATViewControllerVC") as! EATViewControllerVC
         let vc2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryViewControllerVC") as! StoryViewControllerVC
-               
         let vc3 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TOPViewControllerVC") as! TOPViewControllerVC
+        
+        
         
         viewControllers.append(vc1)
         viewControllers.append(vc2)
         viewControllers.append(vc3)
+        
+        
         
         self.dataSource = self
         
@@ -49,9 +51,10 @@ class SecondVC: TabmanViewController {
         barSystem.backgroundStyle = .flat(color: .white)
  
         addBar(barSystem, dataSource: self, at: .top)
-        
     }
 }
+
+
 
 
 extension SecondVC: TMBarDataSource, PageboyViewControllerDataSource {

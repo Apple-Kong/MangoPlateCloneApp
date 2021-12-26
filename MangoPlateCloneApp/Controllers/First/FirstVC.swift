@@ -13,6 +13,8 @@ import ImageSlideshow
 
 class FirstVC: UIViewController {
     var locationManager: CLLocationManager?
+    
+    
     let networkManager = NetworkManager()
     
     @IBOutlet weak var firstCollectionView: UICollectionView!
@@ -79,7 +81,7 @@ class FirstVC: UIViewController {
                 .validate()
                 .responseDecodable(of: NaverData.self) { response in
                     
-                    //
+                    
                     switch response.result {
                     case .success:
                         print("🌊🌊🌊 \(index) naver decoded  successful")

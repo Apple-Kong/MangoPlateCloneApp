@@ -22,5 +22,14 @@ class FirstCollectionViewCell: UICollectionViewCell {
         
     }
     
+    override func prepareForReuse() {
+        imageView1.image = nil
+        
+        // 네트워킹....
+        
+        
+        
+    }
+    
     
 }

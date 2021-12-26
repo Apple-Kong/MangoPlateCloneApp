@@ -20,6 +20,7 @@ class FirstCollectionViewHeader: UICollectionReusableView {
     
     override func awakeFromNib() {
         slideShow.contentScaleMode = .scaleAspectFill
+        slideShow.slideshowInterval  = 3
         
         filterButton.layer.masksToBounds = true
         filterButton.layer.cornerRadius = 16

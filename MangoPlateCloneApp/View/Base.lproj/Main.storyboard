@@ -26,6 +26,20 @@
             </objects>
             <point key="canvasLocation" x="-801" y="-558"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LjY-c6-i11">
+            <objects>
+                <tabBarController id="PDW-4G-9fY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCv-q3-6EH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8q-5a-d2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="-506"/>
+        </scene>
         <!--FirstVC-->
         <scene sceneID="xPa-aq-e88">
             <objects>
