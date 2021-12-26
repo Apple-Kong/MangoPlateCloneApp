@@ -29,10 +29,11 @@ class SecondVC: TabmanViewController {
         viewControllers.append(vc3)
         
         
-        
         self.dataSource = self
-        
         let bar = TMBar.ButtonBar()
+        
+        
+        
         bar.layout.transitionStyle = .snap
         bar.buttons.customize { button in
             button.tintColor = .gray

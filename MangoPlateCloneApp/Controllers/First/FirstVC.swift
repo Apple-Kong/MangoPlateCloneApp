@@ -135,21 +135,12 @@ extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
         if let image = restInfo.image {
             cell.imageView1.image = image
         }
- 
-        
-//        networkManager.fetchImage(roadAddressName: roadAddressName, place_name: name) { urlString in
-//            do {
-//                if let url = URL(string: urlString) {
-//                    let data = try Data(contentsOf: url)
-//                    cell.imageView1.image = UIImage(data: data)
-//                }
-//            } catch {
-//                print(error.localizedDescription)
-//            }
-//        }
 
         return cell
     }
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
@@ -213,5 +204,14 @@ extension FirstVC: CLLocationManagerDelegate {
             print(coordinate.latitude)
             print(coordinate.longitude)
         }
+    }
+}
+
+
+extension FirstVC: UICollectionViewDataSourcePrefetching {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        
     }
 }

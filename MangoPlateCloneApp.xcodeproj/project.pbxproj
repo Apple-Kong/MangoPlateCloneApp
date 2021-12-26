@@ -38,6 +38,7 @@
 		C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569B27788C210000B753 /* EATViewcontroller.swift */; };
 		C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569D27788C2B0000B753 /* StoryViewController.swift */; };
 		C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569F27788C360000B753 /* TOPViewController.swift */; };
+		C0FC56A22778CA900000B753 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC56A12778CA900000B753 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		C0FC569B27788C210000B753 /* EATViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EATViewcontroller.swift; sourceTree = "<group>"; };
 		C0FC569D27788C2B0000B753 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		C0FC569F27788C360000B753 /* TOPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOPViewController.swift; sourceTree = "<group>"; };
+		C0FC56A12778CA900000B753 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C88596EBCF63367DF7D7056E /* Pods-MangoPlateCloneAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneAppTests/Pods-MangoPlateCloneAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0A005C8AE78374482ABC4E3 /* Pods-MangoPlateCloneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp.release.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp/Pods-MangoPlateCloneApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 				C07B305C27745DC700BAE73C /* ThirdVC.swift */,
 				C07B306327745F3000BAE73C /* FourthVC.swift */,
 				C07B306E2774AE3000BAE73C /* TinderColors.swift */,
+				C0FC56A12778CA900000B753 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				C07B30672774693C00BAE73C /* MangoBar.swift in Sources */,
 				C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */,
 				C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */,
+				C0FC56A22778CA900000B753 /* LoginViewController.swift in Sources */,
 				C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */,
 				C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */,
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
