@@ -7,6 +7,7 @@
 
 
 import UIKit
+import KakaoSDKUser
 
 class LoginViewController: UIViewController {
     
@@ -32,5 +33,30 @@ class LoginViewController: UIViewController {
         
         emailButton.layer.masksToBounds = true
         emailButton.layer.cornerRadius = 20
+    }
+    
+    
+    @IBAction func loginButtonTap(_ sender: UIButton) {
+        let id = sender.restorationIdentifier
+        
+        if id == "kakao" {
+            //카카오계정 정보를 입력하여 로그인합니다
+            print("wow")
+            UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+                    if let error = error {
+                        print(error)
+                    }
+                    else {
+                        print("loginWithKakaoAccount() success.")
+
+                        //do something
+                        _ = oauthToken
+                        
+                  
+                        
+                      
+                    }
+                }
+        }
     }
 }

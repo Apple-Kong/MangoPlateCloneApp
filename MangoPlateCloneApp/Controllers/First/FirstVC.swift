@@ -36,12 +36,13 @@ class FirstVC: UIViewController {
                   ImageSource(image: UIImage(named: "event_2")!),
                 ]
     
-   
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        
+        
         locationManager?.delegate = self
         firstCollectionView.delegate = self
         firstCollectionView.dataSource = self

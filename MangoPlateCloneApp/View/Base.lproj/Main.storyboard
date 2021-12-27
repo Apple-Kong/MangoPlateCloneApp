@@ -44,7 +44,7 @@
         <!--Login View Controller-->
         <scene sceneID="Ww5-PR-dG3">
             <objects>
-                <viewController id="BpT-es-itW" customClass="LoginViewController" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BpT-es-itW" customClass="LoginViewController" customModule="MangoPlateCloneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ep1-oT-4aL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background" translatesAutoresizingMaskIntoConstraints="NO" id="8y5-Mr-Fru">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4d-3a-S9M">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="kakao" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4d-3a-S9M">
                                 <rect key="frame" x="60" y="408" width="294" height="44"/>
                                 <color key="backgroundColor" red="0.99634522199999997" green="0.89815980200000001" blue="0.005644630175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.2362392545" green="0.1168198213" blue="0.1160488501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,6 +61,9 @@
                                     <backgroundConfiguration key="background"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="7" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="BpT-es-itW" eventType="touchUpInside" id="HCL-JO-VSS"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="boq-i1-dPZ">
                                 <rect key="frame" x="60" y="104" width="294" height="200"/>
@@ -150,6 +153,7 @@
                             <constraint firstItem="1X7-nO-MSm" firstAttribute="trailing" secondItem="qmq-e1-TMB" secondAttribute="trailing" constant="20" id="yvc-K8-BJQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6Hn-Zc-VTv"/>
                     <connections>
                         <outlet property="appleButton" destination="KBw-Fe-Zub" id="div-C1-jcu"/>
                         <outlet property="emailButton" destination="sUi-2p-YNg" id="L99-QD-6rp"/>
@@ -159,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ucr-Pe-LxM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1849" y="-558"/>
+            <point key="canvasLocation" x="-1825" y="-558"/>
         </scene>
         <!--FirstVC-->
         <scene sceneID="xPa-aq-e88">
