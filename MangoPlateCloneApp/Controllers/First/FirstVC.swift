@@ -38,7 +38,16 @@ class FirstVC: UIViewController {
     
     
     
- 
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "map" {
+            let followingVC = segue.destination as? MapViewController
+            
+            followingVC?.restInfos = self.restInfos
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -142,7 +151,9 @@ extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
         if let image = restInfo.image {
             cell.imageView1.image = image
         }
-
+        
+        cell.distanceLabel.text = restInfo.distance + "km"
+        
         return cell
     }
     

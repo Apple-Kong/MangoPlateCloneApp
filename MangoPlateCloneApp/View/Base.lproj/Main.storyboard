@@ -180,7 +180,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 보고있는 지역은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReB-x0-QYj">
-                                        <rect key="frame" x="20" y="0.0" width="283" height="13.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="92" height="13.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -198,7 +198,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="부천시">
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="강남구">
                                             <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
                                             <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="20"/>
                                         </buttonConfiguration>
@@ -215,19 +215,9 @@
                                                 <imageReference key="image" image="map" catalog="system" symbolScale="large"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9l-3z-zjK">
-                                        <rect key="frame" x="323" y="12" width="26" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="g9l-3z-zjK" secondAttribute="height" multiplier="1:1" id="NWO-lL-diI"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" imageContentMode="center">
-                                                <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
-                                            </backgroundConfiguration>
-                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mapBUtton:" destination="USY-fB-ljV" eventType="touchUpInside" id="drO-CO-3ox"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dL9-Sz-mRp">
                                         <rect key="frame" x="357" y="15" width="1" height="20"/>
@@ -245,17 +235,12 @@
                                     <constraint firstAttribute="trailing" secondItem="rrA-ap-gpk" secondAttribute="trailing" constant="20" id="645-sl-h1B"/>
                                     <constraint firstItem="ReB-x0-QYj" firstAttribute="leading" secondItem="0AK-uK-m2s" secondAttribute="leading" constant="20" id="EG8-4x-uju"/>
                                     <constraint firstAttribute="height" constant="50" id="GaY-pp-7ZU"/>
-                                    <constraint firstItem="dL9-Sz-mRp" firstAttribute="leading" secondItem="g9l-3z-zjK" secondAttribute="trailing" constant="8" id="JhG-E3-Qcs"/>
-                                    <constraint firstItem="g9l-3z-zjK" firstAttribute="bottom" secondItem="rrA-ap-gpk" secondAttribute="bottom" id="QDh-F5-2I5"/>
                                     <constraint firstItem="dL9-Sz-mRp" firstAttribute="top" secondItem="0AK-uK-m2s" secondAttribute="top" constant="15" id="Svv-Kf-jZF"/>
                                     <constraint firstAttribute="bottom" secondItem="rrA-ap-gpk" secondAttribute="bottom" constant="12" id="VSF-GG-FIa"/>
                                     <constraint firstItem="ReB-x0-QYj" firstAttribute="top" secondItem="0AK-uK-m2s" secondAttribute="top" id="Vtj-L7-4jB"/>
                                     <constraint firstItem="rrA-ap-gpk" firstAttribute="leading" secondItem="dL9-Sz-mRp" secondAttribute="trailing" constant="10" id="Wss-g0-ucK"/>
-                                    <constraint firstItem="g9l-3z-zjK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3bI-kZ-xcy" secondAttribute="trailing" constant="8" symbolic="YES" id="aFh-mo-rz7"/>
                                     <constraint firstItem="rrA-ap-gpk" firstAttribute="top" secondItem="0AK-uK-m2s" secondAttribute="top" constant="12" id="cFh-Zx-2EG"/>
-                                    <constraint firstItem="g9l-3z-zjK" firstAttribute="top" secondItem="rrA-ap-gpk" secondAttribute="top" id="exE-Mw-qNg"/>
                                     <constraint firstItem="CLD-V8-YNU" firstAttribute="top" secondItem="0AK-uK-m2s" secondAttribute="top" constant="23" id="gOf-5u-X2Z"/>
-                                    <constraint firstItem="g9l-3z-zjK" firstAttribute="leading" secondItem="ReB-x0-QYj" secondAttribute="trailing" constant="20" id="wVz-aG-ubM"/>
                                     <constraint firstAttribute="bottom" secondItem="dL9-Sz-mRp" secondAttribute="bottom" constant="15" id="zQe-Iq-9NZ"/>
                                 </constraints>
                             </view>
@@ -275,10 +260,13 @@
                             <constraint firstItem="9D5-0Y-v1B" firstAttribute="trailing" secondItem="0AK-uK-m2s" secondAttribute="trailing" id="yOc-gD-rlR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="4Ql-MD-Bya" id="M3E-5r-8Yf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVj-kO-Z11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="-1255"/>
+            <point key="canvasLocation" x="-1620" y="-1267"/>
         </scene>
         <!--FirstVC-->
         <scene sceneID="xPa-aq-e88">
@@ -310,7 +298,7 @@
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="부천시">
+                                        <buttonConfiguration key="configuration" style="plain" imagePlacement="leading" title="강남구">
                                             <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
                                             <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="20"/>
                                         </buttonConfiguration>
@@ -327,6 +315,9 @@
                                                 <imageReference key="image" image="map" catalog="system" symbolScale="large"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="USY-fB-ljV" kind="presentation" identifier="map" modalPresentationStyle="fullScreen" id="Stg-X6-j6a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMc-ul-ypt">
                                         <rect key="frame" x="323" y="12" width="26" height="26"/>
@@ -414,7 +405,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부천시 1.54Km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50X-Mo-sNS">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강남구 1.54Km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50X-Mo-sNS">
                                                             <rect key="frame" x="10" y="29" width="76.5" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
