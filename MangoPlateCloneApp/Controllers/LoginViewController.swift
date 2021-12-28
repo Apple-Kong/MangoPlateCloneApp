@@ -36,23 +36,33 @@ class LoginViewController: UIViewController {
     }
     
     
+    @IBAction func skipButtonTap(_ sender: Any) {
+        self.dismiss(animated: true) {
+            print("dismissed")
+        }
+    }
     @IBAction func loginButtonTap(_ sender: UIButton) {
         let id = sender.restorationIdentifier
         
         if id == "kakao" {
             //카카오계정 정보를 입력하여 로그인합니다
-            print("wow")
             UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
                     if let error = error {
                         print(error)
                     }
                     else {
                         print("loginWithKakaoAccount() success.")
+                        
+                        //로그인 성공.
 
                         //do something
                         _ = oauthToken
                         
-                  
+                        self.dismiss(animated: true) {
+                            print("dismissed")
+                            
+                            //뷰 디스미스 시
+                        }
                         
                       
                     }

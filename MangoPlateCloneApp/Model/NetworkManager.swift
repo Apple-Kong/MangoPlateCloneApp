@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 class NetworkManager {
+
     
     let parameters: [String: [String]] = [
         "x": ["127.06283102249932"],

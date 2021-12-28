@@ -23,6 +23,7 @@
 		C02AD0DF2774455D00FB9836 /* MangoPlateCloneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0DE2774455D00FB9836 /* MangoPlateCloneAppTests.swift */; };
 		C02AD0E92774455D00FB9836 /* MangoPlateCloneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0E82774455D00FB9836 /* MangoPlateCloneAppUITests.swift */; };
 		C02AD0EB2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0EA2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift */; };
+		C0751533277AB796009F76F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0751532277AB796009F76F2 /* MapViewController.swift */; };
 		C07B305927745D7300BAE73C /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305827745D7300BAE73C /* FirstVC.swift */; };
 		C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305A27745DBD00BAE73C /* SecondVC.swift */; };
 		C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305C27745DC700BAE73C /* ThirdVC.swift */; };
@@ -83,6 +84,7 @@
 		C02AD0E42774455D00FB9836 /* MangoPlateCloneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoPlateCloneAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0E82774455D00FB9836 /* MangoPlateCloneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPlateCloneAppUITests.swift; sourceTree = "<group>"; };
 		C02AD0EA2774455D00FB9836 /* MangoPlateCloneAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoPlateCloneAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0751532277AB796009F76F2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C07B305827745D7300BAE73C /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		C07B305A27745DBD00BAE73C /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		C07B305C27745DC700BAE73C /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				C07B305827745D7300BAE73C /* FirstVC.swift */,
 				C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */,
 				C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */,
+				C0751532277AB796009F76F2 /* MapViewController.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */,
 				C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */,
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
+				C0751533277AB796009F76F2 /* MapViewController.swift in Sources */,
 				C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */,
 				C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */,
 				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,

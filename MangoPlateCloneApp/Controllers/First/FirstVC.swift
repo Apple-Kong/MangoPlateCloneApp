@@ -36,11 +36,13 @@ class FirstVC: UIViewController {
                   ImageSource(image: UIImage(named: "event_2")!),
                 ]
     
-
+    
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        
         
         
         locationManager?.delegate = self
@@ -108,6 +110,8 @@ class FirstVC: UIViewController {
                             }
                             self.firstCollectionView.reloadData()
                             
+                            self.loginViewShow()
+                            
                         }
                     }
                 }
@@ -122,6 +126,8 @@ extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
         return restInfos.count
     }
     
+    
+    //KingFisher 사용해서 이미지 캐싱 및 다운로드 해보기
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath) as! FirstCollectionViewCell
