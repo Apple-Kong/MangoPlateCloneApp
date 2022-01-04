@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct KakaoData: Decodable {
+struct KakaoResponse: Decodable {
     let documents: [Restaurant]
     let meta: MetaContainer
     struct MetaContainer: Decodable {

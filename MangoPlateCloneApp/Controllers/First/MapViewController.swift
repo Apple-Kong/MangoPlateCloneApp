@@ -72,5 +72,4 @@ class Marker: NSObject, MKAnnotation {
 
     super.init()
   }
-
 }

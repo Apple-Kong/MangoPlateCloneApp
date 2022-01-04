@@ -10,9 +10,8 @@
 		4458FDC0D4A12FB0D59DA310 /* Pods_MangoPlateCloneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */; };
 		7609D6A94985CA275D7EE276 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */; };
 		B0E293791DD8FFA29398EBF1 /* Pods_MangoPlateCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AF056C73757E337DFF38C4 /* Pods_MangoPlateCloneApp.framework */; };
-		C014A3C227776D0800F85CE4 /* KakaoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C127776D0800F85CE4 /* KakaoData.swift */; };
-		C014A3C4277777EE00F85CE4 /* NaverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C3277777EE00F85CE4 /* NaverData.swift */; };
-		C014A3C62777821E00F85CE4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C52777821E00F85CE4 /* NetworkManager.swift */; };
+		C014A3C227776D0800F85CE4 /* KakaoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C127776D0800F85CE4 /* KakaoResponse.swift */; };
+		C014A3C4277777EE00F85CE4 /* NaverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C3277777EE00F85CE4 /* NaverResponse.swift */; };
 		C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A9022778194F0072BFE3 /* RestInfo.swift */; };
 		C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C72774455B00FB9836 /* AppDelegate.swift */; };
 		C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C92774455B00FB9836 /* SceneDelegate.swift */; };
@@ -29,13 +28,28 @@
 		C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B305C27745DC700BAE73C /* ThirdVC.swift */; };
 		C07B306427745F3000BAE73C /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306327745F3000BAE73C /* FourthVC.swift */; };
 		C07B30672774693C00BAE73C /* MangoBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30662774693C00BAE73C /* MangoBar.swift */; };
-		C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30682774697500BAE73C /* MangoBarLayout.swift */; };
-		C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */; };
 		C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306C2774699900BAE73C /* MangoBarButton.swift */; };
 		C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B306E2774AE3000BAE73C /* TinderColors.swift */; };
 		C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */; };
 		C08DED0C277876050054A1C4 /* FirstCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */; };
 		C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */; };
+		C0F9AB872783D3B90002DE25 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB862783D3B90002DE25 /* Constant.swift */; };
+		C0F9AB8A2783D4450002DE25 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB892783D4450002DE25 /* Key.swift */; };
+		C0F9AB902783D53F0002DE25 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F9AB8D2783D53F0002DE25 /* NotoSansCJKkr-Medium.otf */; };
+		C0F9AB912783D53F0002DE25 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F9AB8E2783D53F0002DE25 /* NotoSansCJKkr-Regular.otf */; };
+		C0F9AB922783D53F0002DE25 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C0F9AB8F2783D53F0002DE25 /* NotoSansCJKkr-Bold.otf */; };
+		C0F9AB952783D54E0002DE25 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB942783D54E0002DE25 /* BaseViewController.swift */; };
+		C0F9ABA12783D5710002DE25 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB972783D5710002DE25 /* IndicatorView.swift */; };
+		C0F9ABA22783D5710002DE25 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB992783D5710002DE25 /* Date.swift */; };
+		C0F9ABA32783D5710002DE25 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9A2783D5710002DE25 /* UIColor.swift */; };
+		C0F9ABA42783D5710002DE25 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9B2783D5710002DE25 /* String.swift */; };
+		C0F9ABA52783D5710002DE25 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9C2783D5710002DE25 /* UIButton.swift */; };
+		C0F9ABA62783D5710002DE25 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9D2783D5710002DE25 /* UIViewController.swift */; };
+		C0F9ABA72783D5710002DE25 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9E2783D5710002DE25 /* UINavigationBar.swift */; };
+		C0F9ABA82783D5710002DE25 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB9F2783D5710002DE25 /* UIFont.swift */; };
+		C0F9ABA92783D5710002DE25 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9ABA02783D5710002DE25 /* Device.swift */; };
+		C0F9ABAB2783D6300002DE25 /* KakaoLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9ABAA2783D6300002DE25 /* KakaoLocalDataManager.swift */; };
+		C0F9ABAD2783D63E0002DE25 /* NaverImageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9ABAC2783D63E0002DE25 /* NaverImageDataManager.swift */; };
 		C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569B27788C210000B753 /* EATViewcontroller.swift */; };
 		C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569D27788C2B0000B753 /* StoryViewController.swift */; };
 		C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FC569F27788C360000B753 /* TOPViewController.swift */; };
@@ -67,9 +81,8 @@
 		92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B300AB3379FDB1CB5599E25A /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C014A3C127776D0800F85CE4 /* KakaoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoData.swift; sourceTree = "<group>"; };
-		C014A3C3277777EE00F85CE4 /* NaverData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverData.swift; sourceTree = "<group>"; };
-		C014A3C52777821E00F85CE4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C014A3C127776D0800F85CE4 /* KakaoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoResponse.swift; sourceTree = "<group>"; };
+		C014A3C3277777EE00F85CE4 /* NaverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverResponse.swift; sourceTree = "<group>"; };
 		C020A9022778194F0072BFE3 /* RestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInfo.swift; sourceTree = "<group>"; };
 		C02AD0C42774455B00FB9836 /* MangoPlateCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoPlateCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0C72774455B00FB9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,13 +103,28 @@
 		C07B305C27745DC700BAE73C /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		C07B306327745F3000BAE73C /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		C07B30662774693C00BAE73C /* MangoBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBar.swift; sourceTree = "<group>"; };
-		C07B30682774697500BAE73C /* MangoBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarLayout.swift; sourceTree = "<group>"; };
-		C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButtonContainer.swift; sourceTree = "<group>"; };
 		C07B306C2774699900BAE73C /* MangoBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarButton.swift; sourceTree = "<group>"; };
 		C07B306E2774AE3000BAE73C /* TinderColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderColors.swift; sourceTree = "<group>"; };
 		C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoBarIndicator.swift; sourceTree = "<group>"; };
 		C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewHeader.swift; sourceTree = "<group>"; };
 		C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		C0F9AB862783D3B90002DE25 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C0F9AB892783D4450002DE25 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		C0F9AB8D2783D53F0002DE25 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		C0F9AB8E2783D53F0002DE25 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		C0F9AB8F2783D53F0002DE25 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		C0F9AB942783D54E0002DE25 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C0F9AB972783D5710002DE25 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		C0F9AB992783D5710002DE25 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		C0F9AB9A2783D5710002DE25 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C0F9AB9B2783D5710002DE25 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C0F9AB9C2783D5710002DE25 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		C0F9AB9D2783D5710002DE25 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C0F9AB9E2783D5710002DE25 /* UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		C0F9AB9F2783D5710002DE25 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		C0F9ABA02783D5710002DE25 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		C0F9ABAA2783D6300002DE25 /* KakaoLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLocalDataManager.swift; sourceTree = "<group>"; };
+		C0F9ABAC2783D63E0002DE25 /* NaverImageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverImageDataManager.swift; sourceTree = "<group>"; };
 		C0FC569B27788C210000B753 /* EATViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EATViewcontroller.swift; sourceTree = "<group>"; };
 		C0FC569D27788C2B0000B753 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		C0FC569F27788C360000B753 /* TOPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOPViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +212,8 @@
 				C02AD0C72774455B00FB9836 /* AppDelegate.swift */,
 				C02AD0C92774455B00FB9836 /* SceneDelegate.swift */,
 				C02AD0D52774455D00FB9836 /* Info.plist */,
+				C0F9AB852783D3A80002DE25 /* Configuration */,
+				C0F9AB962783D5710002DE25 /* Util */,
 				C07B306027745DD900BAE73C /* Model */,
 				C07B306127745DEA00BAE73C /* View */,
 				C07B306227745DF200BAE73C /* Controllers */,
@@ -211,10 +241,9 @@
 		C07B306027745DD900BAE73C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C014A3C127776D0800F85CE4 /* KakaoData.swift */,
-				C014A3C3277777EE00F85CE4 /* NaverData.swift */,
-				C014A3C52777821E00F85CE4 /* NetworkManager.swift */,
-				C020A9022778194F0072BFE3 /* RestInfo.swift */,
+				C0F9ABAE2783E9330002DE25 /* Entity */,
+				C0F9ABAA2783D6300002DE25 /* KakaoLocalDataManager.swift */,
+				C0F9ABAC2783D63E0002DE25 /* NaverImageDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,9 +261,9 @@
 		C07B306227745DF200BAE73C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C0FC569A27788C040000B753 /* Second */,
 				C07B30652774692200BAE73C /* TabBar */,
 				C0F636A92774E53600070CEA /* First */,
+				C0FC569A27788C040000B753 /* Second */,
 				C02AD0CB2774455B00FB9836 /* ViewController.swift */,
 				C07B305C27745DC700BAE73C /* ThirdVC.swift */,
 				C07B306327745F3000BAE73C /* FourthVC.swift */,
@@ -249,8 +278,6 @@
 			children = (
 				C07B30662774693C00BAE73C /* MangoBar.swift */,
 				C07B30702774C0AF00BAE73C /* MangoBarIndicator.swift */,
-				C07B30682774697500BAE73C /* MangoBarLayout.swift */,
-				C07B306A2774698B00BAE73C /* MangoBarButtonContainer.swift */,
 				C07B306C2774699900BAE73C /* MangoBarButton.swift */,
 			);
 			path = TabBar;
@@ -265,6 +292,78 @@
 				C0751532277AB796009F76F2 /* MapViewController.swift */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		C0F9AB852783D3A80002DE25 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB862783D3B90002DE25 /* Constant.swift */,
+				C0F9AB882783D4330002DE25 /* Secret */,
+				C0F9AB8C2783D53F0002DE25 /* Font */,
+				C0F9AB932783D54E0002DE25 /* Base */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C0F9AB882783D4330002DE25 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB892783D4450002DE25 /* Key.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		C0F9AB8C2783D53F0002DE25 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB8D2783D53F0002DE25 /* NotoSansCJKkr-Medium.otf */,
+				C0F9AB8E2783D53F0002DE25 /* NotoSansCJKkr-Regular.otf */,
+				C0F9AB8F2783D53F0002DE25 /* NotoSansCJKkr-Bold.otf */,
+			);
+			name = Font;
+			path = "../../../../../Downloads/ios-template-storyboard-master/EduTemplate/Configuration/Font";
+			sourceTree = "<group>";
+		};
+		C0F9AB932783D54E0002DE25 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB942783D54E0002DE25 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C0F9AB962783D5710002DE25 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB972783D5710002DE25 /* IndicatorView.swift */,
+				C0F9ABA02783D5710002DE25 /* Device.swift */,
+				C0F9AB982783D5710002DE25 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C0F9AB982783D5710002DE25 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0F9AB992783D5710002DE25 /* Date.swift */,
+				C0F9AB9A2783D5710002DE25 /* UIColor.swift */,
+				C0F9AB9B2783D5710002DE25 /* String.swift */,
+				C0F9AB9C2783D5710002DE25 /* UIButton.swift */,
+				C0F9AB9D2783D5710002DE25 /* UIViewController.swift */,
+				C0F9AB9E2783D5710002DE25 /* UINavigationBar.swift */,
+				C0F9AB9F2783D5710002DE25 /* UIFont.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C0F9ABAE2783E9330002DE25 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C014A3C127776D0800F85CE4 /* KakaoResponse.swift */,
+				C014A3C3277777EE00F85CE4 /* NaverResponse.swift */,
+				C020A9022778194F0072BFE3 /* RestInfo.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		C0FC569A27788C040000B753 /* Second */ = {
@@ -387,9 +486,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F9AB912783D53F0002DE25 /* NotoSansCJKkr-Regular.otf in Resources */,
 				C02AD0D42774455D00FB9836 /* LaunchScreen.storyboard in Resources */,
 				C02AD0D12774455D00FB9836 /* Assets.xcassets in Resources */,
 				C02AD0CF2774455B00FB9836 /* Main.storyboard in Resources */,
+				C0F9AB902783D53F0002DE25 /* NotoSansCJKkr-Medium.otf in Resources */,
+				C0F9AB922783D53F0002DE25 /* NotoSansCJKkr-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,29 +619,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F9ABA42783D5710002DE25 /* String.swift in Sources */,
 				C07B30672774693C00BAE73C /* MangoBar.swift in Sources */,
+				C0F9ABA32783D5710002DE25 /* UIColor.swift in Sources */,
+				C0F9ABA92783D5710002DE25 /* Device.swift in Sources */,
 				C07B305D27745DC700BAE73C /* ThirdVC.swift in Sources */,
 				C07B30712774C0AF00BAE73C /* MangoBarIndicator.swift in Sources */,
+				C0F9ABA52783D5710002DE25 /* UIButton.swift in Sources */,
 				C0FC56A22778CA900000B753 /* LoginViewController.swift in Sources */,
-				C07B306B2774698B00BAE73C /* MangoBarButtonContainer.swift in Sources */,
 				C0FC56A027788C360000B753 /* TOPViewController.swift in Sources */,
+				C0F9AB8A2783D4450002DE25 /* Key.swift in Sources */,
+				C0F9ABAD2783D63E0002DE25 /* NaverImageDataManager.swift in Sources */,
 				C02AD0CC2774455B00FB9836 /* ViewController.swift in Sources */,
 				C0751533277AB796009F76F2 /* MapViewController.swift in Sources */,
 				C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */,
 				C07B305B27745DBD00BAE73C /* SecondVC.swift in Sources */,
 				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,
+				C0F9AB872783D3B90002DE25 /* Constant.swift in Sources */,
 				C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */,
-				C014A3C4277777EE00F85CE4 /* NaverData.swift in Sources */,
+				C014A3C4277777EE00F85CE4 /* NaverResponse.swift in Sources */,
+				C0F9ABA82783D5710002DE25 /* UIFont.swift in Sources */,
 				C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */,
-				C014A3C62777821E00F85CE4 /* NetworkManager.swift in Sources */,
+				C0F9ABA72783D5710002DE25 /* UINavigationBar.swift in Sources */,
+				C0F9ABA12783D5710002DE25 /* IndicatorView.swift in Sources */,
 				C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */,
 				C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */,
-				C014A3C227776D0800F85CE4 /* KakaoData.swift in Sources */,
-				C07B30692774697500BAE73C /* MangoBarLayout.swift in Sources */,
+				C014A3C227776D0800F85CE4 /* KakaoResponse.swift in Sources */,
 				C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */,
+				C0F9AB952783D54E0002DE25 /* BaseViewController.swift in Sources */,
 				C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */,
 				C08DED0C277876050054A1C4 /* FirstCollectionViewHeader.swift in Sources */,
+				C0F9ABA62783D5710002DE25 /* UIViewController.swift in Sources */,
+				C0F9ABAB2783D6300002DE25 /* KakaoLocalDataManager.swift in Sources */,
 				C07B306427745F3000BAE73C /* FourthVC.swift in Sources */,
+				C0F9ABA22783D5710002DE25 /* Date.swift in Sources */,
 				C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

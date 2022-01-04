@@ -9,6 +9,10 @@ import UIKit
 
 class FirstCollectionViewCell: UICollectionViewCell {
     
+    
+    
+    var restInfo: RestInfo? = nil
+    
     @IBOutlet weak var evaluationLabel: UILabel!
     @IBOutlet weak var reviewCountLabel: UILabel!
     @IBOutlet weak var viewCountLabel: UILabel!
@@ -19,17 +23,16 @@ class FirstCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
     }
+    
+    
     
     override func prepareForReuse() {
         imageView1.image = nil
-        
-        // 네트워킹....
-        
-        
-        
+ 
     }
-    
-    
 }
+
+
+
