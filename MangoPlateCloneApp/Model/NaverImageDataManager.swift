@@ -23,7 +23,7 @@ class NaverImageDataManager {
         
         AF.request(Constant.NAVER_URL, method: .get, parameters: params, encoder: URLEncodedFormParameterEncoder.default, headers: Key.naverHeaders)
             .validate()
-            .responseDecodable(of: NaverResponse.self) { response in
+            .responseDecodable(of: NaverImageResponse.self) { response in
                 switch response.result {
                 case .success:
                     print("🌊🌊🌊 naver decoded  successful")

@@ -577,6 +577,7 @@
                     </view>
                     <connections>
                         <outlet property="firstCollectionView" destination="k1h-NI-b36" id="H4i-xt-wvd"/>
+                        <outlet property="locationButton" destination="XzD-Uy-YTN" id="fQG-BZ-nIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbC-bY-ZdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

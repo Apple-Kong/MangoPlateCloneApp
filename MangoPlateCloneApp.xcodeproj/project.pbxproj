@@ -10,8 +10,8 @@
 		4458FDC0D4A12FB0D59DA310 /* Pods_MangoPlateCloneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */; };
 		7609D6A94985CA275D7EE276 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */; };
 		B0E293791DD8FFA29398EBF1 /* Pods_MangoPlateCloneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AF056C73757E337DFF38C4 /* Pods_MangoPlateCloneApp.framework */; };
-		C014A3C227776D0800F85CE4 /* KakaoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C127776D0800F85CE4 /* KakaoResponse.swift */; };
-		C014A3C4277777EE00F85CE4 /* NaverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C3277777EE00F85CE4 /* NaverResponse.swift */; };
+		C014A3C227776D0800F85CE4 /* KakaoLocalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C127776D0800F85CE4 /* KakaoLocalResponse.swift */; };
+		C014A3C4277777EE00F85CE4 /* NaverImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C014A3C3277777EE00F85CE4 /* NaverImageResponse.swift */; };
 		C020A9032778194F0072BFE3 /* RestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C020A9022778194F0072BFE3 /* RestInfo.swift */; };
 		C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C72774455B00FB9836 /* AppDelegate.swift */; };
 		C02AD0CA2774455B00FB9836 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02AD0C92774455B00FB9836 /* SceneDelegate.swift */; };
@@ -81,8 +81,8 @@
 		92D66B30125548B99BC4F087 /* Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneApp_MangoPlateCloneAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		961A4FFC268FCF7308E96914 /* Pods_MangoPlateCloneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangoPlateCloneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B300AB3379FDB1CB5599E25A /* Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests/Pods-MangoPlateCloneApp-MangoPlateCloneAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C014A3C127776D0800F85CE4 /* KakaoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoResponse.swift; sourceTree = "<group>"; };
-		C014A3C3277777EE00F85CE4 /* NaverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverResponse.swift; sourceTree = "<group>"; };
+		C014A3C127776D0800F85CE4 /* KakaoLocalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLocalResponse.swift; sourceTree = "<group>"; };
+		C014A3C3277777EE00F85CE4 /* NaverImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverImageResponse.swift; sourceTree = "<group>"; };
 		C020A9022778194F0072BFE3 /* RestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInfo.swift; sourceTree = "<group>"; };
 		C02AD0C42774455B00FB9836 /* MangoPlateCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangoPlateCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02AD0C72774455B00FB9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -359,8 +359,8 @@
 		C0F9ABAE2783E9330002DE25 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				C014A3C127776D0800F85CE4 /* KakaoResponse.swift */,
-				C014A3C3277777EE00F85CE4 /* NaverResponse.swift */,
+				C014A3C127776D0800F85CE4 /* KakaoLocalResponse.swift */,
+				C014A3C3277777EE00F85CE4 /* NaverImageResponse.swift */,
 				C020A9022778194F0072BFE3 /* RestInfo.swift */,
 			);
 			path = Entity;
@@ -637,14 +637,14 @@
 				C07B305927745D7300BAE73C /* FirstVC.swift in Sources */,
 				C0F9AB872783D3B90002DE25 /* Constant.swift in Sources */,
 				C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */,
-				C014A3C4277777EE00F85CE4 /* NaverResponse.swift in Sources */,
+				C014A3C4277777EE00F85CE4 /* NaverImageResponse.swift in Sources */,
 				C0F9ABA82783D5710002DE25 /* UIFont.swift in Sources */,
 				C07B306D2774699900BAE73C /* MangoBarButton.swift in Sources */,
 				C0F9ABA72783D5710002DE25 /* UINavigationBar.swift in Sources */,
 				C0F9ABA12783D5710002DE25 /* IndicatorView.swift in Sources */,
 				C0FC569E27788C2B0000B753 /* StoryViewController.swift in Sources */,
 				C02AD0C82774455B00FB9836 /* AppDelegate.swift in Sources */,
-				C014A3C227776D0800F85CE4 /* KakaoResponse.swift in Sources */,
+				C014A3C227776D0800F85CE4 /* KakaoLocalResponse.swift in Sources */,
 				C0FC569C27788C210000B753 /* EATViewcontroller.swift in Sources */,
 				C0F9AB952783D54E0002DE25 /* BaseViewController.swift in Sources */,
 				C07B306F2774AE3000BAE73C /* TinderColors.swift in Sources */,

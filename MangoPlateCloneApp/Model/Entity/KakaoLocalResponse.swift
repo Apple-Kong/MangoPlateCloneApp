@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct KakaoResponse: Decodable {
+struct KakaoLocalResponse: Decodable {
     let documents: [Restaurant]
     let meta: MetaContainer
     struct MetaContainer: Decodable {
@@ -22,6 +22,28 @@ struct KakaoResponse: Decodable {
         }
         let total_count: Int
     }
+}
+
+struct KakaoGeoResponse: Decodable {
+    let meta: Meta
+    struct Meta: Decodable {
+        let total_count: Int
+    }
+    let documents: [GeoData]
+      
+    
+}
+
+struct GeoData: Decodable {
+        let region_type: String
+        let address_name: String
+        let region_1depth_name: String
+        let region_2depth_name: String
+        let region_3depth_name: String
+        let region_4depth_name: String
+        let code: String
+        let x: Double
+        let y: Double
 }
 
 

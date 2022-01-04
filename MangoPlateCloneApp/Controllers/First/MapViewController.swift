@@ -14,14 +14,24 @@ class MapViewController: UIViewController {
     
     
     var restInfos: [RestInfo] = []
+    var currentLocation: (String, String)?
     
     @IBAction func mapBUtton(_ sender: UIButton) {
         self.dismiss(animated: true) {
             print("dismissed")
         }
     }
-    let currentLocation = CLLocationCoordinate2D(latitude: 37.514322572335935, longitude: 127.06283102249932)
+
     
+    var currentCoordinate: CLLocationCoordinate2D {
+        
+        if let currentLocation = currentLocation {
+            return CLLocationCoordinate2D(latitude: Double(currentLocation.1) ?? 37.514322572335935, longitude: Double(currentLocation.0) ??  127.06283102249932)
+        } else {
+            return CLLocationCoordinate2D(latitude: 37.514322572335935, longitude: 127.06283102249932)
+        }
+        
+    }
     let distanceSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
 //    let mark = Marker(
 //             title: "홍대입구역",
@@ -33,7 +43,7 @@ class MapViewController: UIViewController {
         
 
         
-        let mapCoordinates = MKCoordinateRegion(center: currentLocation, span: distanceSpan)
+        let mapCoordinates = MKCoordinateRegion(center: currentCoordinate, span: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
         mapView.pointOfInterestFilter = MKPointOfInterestFilter.excludingAll
         

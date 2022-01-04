@@ -9,12 +9,14 @@ import UIKit
 import Alamofire
 import CoreLocation
 import ImageSlideshow
+import Kingfisher
 
 
 class FirstVC: UIViewController {
-    var locationManager: CLLocationManager?
+    var locationManager = CLLocationManager()
     let kakaoLocalDataManager = KakaoLocalDataManager()
     let naverImageDataManager = NaverImageDataManager()
+    var refreashControl = UIRefreshControl()
     
     var restInfos: [RestInfo] = []
     var x = "127.06283102249932"
@@ -25,50 +27,71 @@ class FirstVC: UIViewController {
                   ImageSource(image: UIImage(named: "event_2")!),
                 ]
     
+    @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var firstCollectionView: UICollectionView!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "map" {
-            let followingVC = segue.destination as? MapViewController
             
+            
+            let followingVC = segue.destination as? MapViewController
             followingVC?.restInfos = self.restInfos
+            followingVC?.currentLocation = (x,y)
         }
+    }
+    
+    @objc func pullToRefreash(_ sender: Any) {
+        
+        locationManager.requestLocation()
+        
+        kakaoLocalDataManager.fetchCurrentLocation(x: x, y: y) { locationString in
+            self.locationButton.titleLabel?.text = locationString
+            print("💸💸💸💸   \(locationString)")
+        }
+        kakaoLocalDataManager.fetchRestaurants(x: x, y: y, delegate: self)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        locationManager?.delegate = self
+        locationManager.delegate = self
         firstCollectionView.delegate = self
         firstCollectionView.dataSource = self
-        
-        locationManager = CLLocationManager()
-        locationManager?.requestWhenInUseAuthorization()
-        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager?.startUpdatingLocation()
+        firstCollectionView.refreshControl = refreashControl
+        refreashControl.addTarget(self, action: #selector(pullToRefreash(_:)), for: .valueChanged)
         
         
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestLocation()
+        
+        kakaoLocalDataManager.fetchCurrentLocation(x: x, y: y) { locationString in
+            self.locationButton.titleLabel?.text = locationString
+            print("💸💸💸💸   \(locationString)")
+        }
+
         self.showIndicator()
-     
         kakaoLocalDataManager.fetchRestaurants(x: x, y: y, delegate: self)
- 
 
     }
 }
 
 
 extension FirstVC {
-    func didRetrieveLocal(response: KakaoResponse) {
+    func didRetrieveLocal(response: KakaoLocalResponse) {
         // 네트워크 성공시 실행
-        self.dismissIndicator()
+        
         for (index, detail) in response.documents.enumerated() {
             self.restInfos = []
             
             naverImageDataManager.fetchImage(place_name: detail.place_name) { urlString in
                 if urlString != "요청실패" {
+                    self.dismissIndicator()
                     self.restInfos.append(RestInfo(urlString: urlString, detail: detail))
                     self.firstCollectionView.reloadData()
                 } else {
+                    self.dismissIndicator()
                     print("\(index)이미지 요청 실패")
                 }
             }
@@ -95,13 +118,16 @@ extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath) as! FirstCollectionViewCell
         
-        let restInfo = restInfos[indexPath.row]
-        
-        
-        cell.imageView1.image = restInfo.image
-        let name = restInfo.detail.place_name
-        cell.titleLabel.text = name
-        cell.distanceLabel.text = restInfo.distance + "km"
+        if indexPath.row < restInfos.count {
+            let restInfo = restInfos[indexPath.row]
+            
+            //옵셔널값 대응 필요.
+            let url = URL(string: restInfo.urlString!)
+            cell.imageView1.kf.setImage(with: url)
+            let name = restInfo.detail.place_name
+            cell.titleLabel.text = name
+            cell.distanceLabel.text = restInfo.distance + "km"
+        }
         
         return cell
     }
@@ -157,7 +183,11 @@ extension FirstVC: CLLocationManagerDelegate {
             
             self.x = String(coordinate.longitude)
             self.y = String(coordinate.latitude)
-            print("위치 정보 불러오기 완료")
+            print("🗺 🗺 🗺위치 정보 불러오기 완료")
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription + "🗺 🗺 🗺🗺 🗺 🗺 ")
     }
 }

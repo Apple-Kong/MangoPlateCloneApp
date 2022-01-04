@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NaverResponse: Decodable {
+struct NaverImageResponse: Decodable {
     let lastBuildDate: String // date time 타입이라는 데 뭔지 모르겠음
     let total: Int
     let start: Int
