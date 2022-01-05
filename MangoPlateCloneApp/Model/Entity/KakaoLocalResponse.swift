@@ -30,8 +30,6 @@ struct KakaoGeoResponse: Decodable {
         let total_count: Int
     }
     let documents: [GeoData]
-      
-    
 }
 
 struct GeoData: Decodable {

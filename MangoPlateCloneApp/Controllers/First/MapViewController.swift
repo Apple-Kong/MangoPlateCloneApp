@@ -11,8 +11,9 @@ import MapKit
 class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var locationButton: UIButton!
     
-    
+    var currentLocationString: String?
     var restInfos: [RestInfo] = []
     var currentLocation: (String, String)?
     
@@ -41,7 +42,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        self.locationButton.titleLabel?.text = currentLocationString
         
         let mapCoordinates = MKCoordinateRegion(center: currentCoordinate, span: distanceSpan)
         mapView.setRegion(mapCoordinates, animated: true)
@@ -52,7 +53,7 @@ class MapViewController: UIViewController {
             let subtitle = restInfo.detail.road_address_name
             let x = Double(restInfo.detail.x)
             let y = Double(restInfo.detail.y)
-            print(x,y)
+          
             
             let mark = Marker(title: name, subtitle: subtitle, coordinate: CLLocationCoordinate2D(latitude: y!, longitude: x!))
             mapView.addAnnotation(mark)

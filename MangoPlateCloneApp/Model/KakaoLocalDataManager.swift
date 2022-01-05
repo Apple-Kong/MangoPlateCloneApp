@@ -10,22 +10,20 @@ import Alamofire
 
 class KakaoLocalDataManager {
     //맛집 리스트 불러오는 함수.
-    func fetchRestaurants(x: String, y: String, delegate: FirstVC) {
-
+    func fetchRestaurants(x: String, y: String, page: Int, delegate: FirstVC) {
+        //쿼리 생성
         let parameters: [String: [String]] = [
             "x": ["\(x)"],
             "y": ["\(y)"],
-            "query": ["맛집"]
+            "query": ["맛집"],
+            "page": ["\(page)"]
         ]
-
-
+        print("🤙\(page)")
         AF.request(Constant.KAKAO_LOCAL_URL, method: .get, parameters: parameters, encoder: URLEncodedFormParameterEncoder.default, headers: Key.kakaoHeaders)
             .validate()
             .responseDecodable(of: KakaoLocalResponse.self) { response in
-
                 switch response.result {
                 case .success(let response):
-                    print("🌊🌊🌊 Kakao decoded successful")
                     delegate.didRetrieveLocal(response: response)
                 case .failure(let error):
                     print(error.localizedDescription)

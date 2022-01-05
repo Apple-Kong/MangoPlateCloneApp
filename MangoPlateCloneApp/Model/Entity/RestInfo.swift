@@ -14,27 +14,17 @@ struct RestInfo {
     
     //추가하는 url
     var urlString: String?
-    
-    
-    
+
     let detail: Restaurant
     
-    var distance: String {
-        let userLocation = CLLocation(latitude: 37.514322572335935, longitude: 127.06283102249932)
+    func distance(latitude: Double, longitude: Double) -> String {
+        let userLocation = CLLocation(latitude: latitude, longitude: longitude)
         let coordinate = CLLocation(latitude: Double(detail.y)!, longitude: Double(detail.x)!)
         
-        print(coordinate)
-        print(userLocation)
         
         let distanceInMeters = coordinate.distance(from: userLocation)// result is in meters
-        print(distanceInMeters)
-        let distanceInKiloMeters = distanceInMeters / 1000
-        print(distanceInKiloMeters)
-//        "x": ["127.06283102249932"],
-//        "y": ["37.514322572335935"],
-        
-        
+        let distanceInKiloMeters = distanceInMeters / 100
+
         return String(format: "%.2f", distanceInKiloMeters)
     }
-
 }

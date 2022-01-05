@@ -9,7 +9,6 @@ import UIKit
 import Alamofire
 import CoreLocation
 import ImageSlideshow
-import Kingfisher
 
 
 class FirstVC: UIViewController {
@@ -19,8 +18,13 @@ class FirstVC: UIViewController {
     var refreashControl = UIRefreshControl()
     
     var restInfos: [RestInfo] = []
-    var x = "127.06283102249932"
-    var y = "37.514322572335935"
+    var page = 1
+    var isAvailable = true
+    
+    //위치정보 관련 변수
+    var currentLocationString: String = "부천시"
+    var x = "126.76335622264729"
+    var y = "37.50482550559047"
     
     let images = [ImageSource(image: UIImage(named: "event_0")!),
                   ImageSource(image: UIImage(named: "event_1")!),
@@ -37,19 +41,27 @@ class FirstVC: UIViewController {
             let followingVC = segue.destination as? MapViewController
             followingVC?.restInfos = self.restInfos
             followingVC?.currentLocation = (x,y)
+            followingVC?.currentLocationString = currentLocationString
         }
     }
     
     @objc func pullToRefreash(_ sender: Any) {
-        
+        self.restInfos = []
         locationManager.requestLocation()
-        
         kakaoLocalDataManager.fetchCurrentLocation(x: x, y: y) { locationString in
-            self.locationButton.titleLabel?.text = locationString
-            print("💸💸💸💸   \(locationString)")
+            
+            self.currentLocationString = locationString
+            self.locationButton.titleLabel?.text = self.currentLocationString
         }
-        kakaoLocalDataManager.fetchRestaurants(x: x, y: y, delegate: self)
+        kakaoLocalDataManager.fetchRestaurants(x: x, y: y, page: 1, delegate: self)
+        self.page = 1
+        self.isAvailable = true
 
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.locationButton.titleLabel?.text = currentLocationString
     }
     
     override func viewDidLoad() {
@@ -66,31 +78,56 @@ class FirstVC: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestLocation()
         
+        
+        //현재 위도 경도에 대한 지역명 요청
         kakaoLocalDataManager.fetchCurrentLocation(x: x, y: y) { locationString in
             self.locationButton.titleLabel?.text = locationString
             print("💸💸💸💸   \(locationString)")
         }
-
+        
+        
+        //현재 위도 경도 기반 맛집 리스트 요청
         self.showIndicator()
-        kakaoLocalDataManager.fetchRestaurants(x: x, y: y, delegate: self)
+        kakaoLocalDataManager.fetchRestaurants(x: x, y: y, page: 1, delegate: self)
 
     }
 }
 
 
 extension FirstVC {
+    
+    // 네트워크 성공시 실행
     func didRetrieveLocal(response: KakaoLocalResponse) {
-        // 네트워크 성공시 실행
+        
+        
+        DispatchQueue.main.async {
+           self.firstCollectionView.refreshControl?.endRefreshing()
+        }
+        
+        if response.meta.is_end {
+            self.isAvailable = false
+        } else {
+            self.isAvailable = true
+        }
+        print("🏄🏻‍♂️🏄🏻‍♂️\(response.documents)")
+        
         
         for (index, detail) in response.documents.enumerated() {
-            self.restInfos = []
-            
+            //각각의 셀에 대해 이미지 요청
             naverImageDataManager.fetchImage(place_name: detail.place_name) { urlString in
                 if urlString != "요청실패" {
                     self.dismissIndicator()
+                    
+                    //이미지 urlString 을 받아온 경우. 이를 구조체로 묶어 뷰컨트롤러에 추가.
                     self.restInfos.append(RestInfo(urlString: urlString, detail: detail))
+                    
+                    //사용자 응답성 개선을 위해 main 큐에서 reload
+                
                     self.firstCollectionView.reloadData()
+                
+                    
                 } else {
+                    
                     self.dismissIndicator()
                     print("\(index)이미지 요청 실패")
                 }
@@ -98,81 +135,10 @@ extension FirstVC {
         }
     }
     
-    
     func failedToRequest(message: String) {
         self.dismissIndicator()
         self.presentAlert(title: message)
-    }
-}
-
-
-
-
-extension FirstVC: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return restInfos.count
-    }
-    
-    
-    //KingFisher 사용해서 이미지 캐싱 및 다운로드 해보기
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "firstCell", for: indexPath) as! FirstCollectionViewCell
-        
-        if indexPath.row < restInfos.count {
-            let restInfo = restInfos[indexPath.row]
-            
-            //옵셔널값 대응 필요.
-            let url = URL(string: restInfo.urlString!)
-            cell.imageView1.kf.setImage(with: url)
-            let name = restInfo.detail.place_name
-            cell.titleLabel.text = name
-            cell.distanceLabel.text = restInfo.distance + "km"
-        }
-        
-        return cell
-    }
-    
-
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        
-        
-        switch kind {
-        case UICollectionView.elementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "reusableView", for: indexPath) as! FirstCollectionViewHeader
-            
-            headerView.slideShow.setImageInputs(images)
-          
-            return headerView
-        default:
-            assert(false, "놉")
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-    }
-}
-
-extension FirstVC: UICollectionViewDelegateFlowLayout {
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
-        let width = collectionView.frame.width / 2 - 15
-        let height = width * 1.5
-        
-        let size = CGSize(width: width, height: height)
-        
-        return size
+        self.isAvailable = true
     }
 }
 
