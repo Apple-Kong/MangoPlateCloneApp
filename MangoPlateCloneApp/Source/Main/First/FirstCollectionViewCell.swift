@@ -29,7 +29,7 @@ class FirstCollectionViewCell: UICollectionViewCell {
     
     
     override func prepareForReuse() {
-        imageView1.image = nil
+        imageView1.image = UIImage(named: "mango")
  
     }
 }

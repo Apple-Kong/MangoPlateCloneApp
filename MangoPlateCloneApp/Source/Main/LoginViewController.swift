@@ -20,8 +20,12 @@ class LoginViewController: UIViewController {
         
         facebookButton.layer.masksToBounds = true
         facebookButton.layer.cornerRadius = 20
+        
+        facebookButton.imageView?.layer.transform = CATransform3DMakeScale(0.65, 0.65, 0.65)
+        
         facebookButton.imageView?.contentMode = .scaleAspectFill
-        facebookButton.imageView?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        facebookButton.imageView?.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        
         
         kakaoButton.layer.masksToBounds = true
         kakaoButton.layer.cornerRadius = 20
@@ -29,7 +33,7 @@ class LoginViewController: UIViewController {
         appleButton.layer.masksToBounds = true
         appleButton.layer.cornerRadius = 20
         appleButton.imageView?.contentMode = .scaleAspectFill
-        appleButton.imageView?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        appleButton.imageView?.layer.transform = CATransform3DMakeScale(0.7, 0.7, 0.7)
         
         emailButton.layer.masksToBounds = true
         emailButton.layer.cornerRadius = 20

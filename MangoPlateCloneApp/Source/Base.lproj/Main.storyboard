@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -76,24 +76,25 @@
                                     <constraint firstAttribute="width" secondItem="fOX-au-tZh" secondAttribute="height" multiplier="20:3" id="Y0F-HB-h3Q"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="13" minY="13" maxX="11" maxY="14"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="login_facebook_logo" title="페이스북으로 계속하기" imagePadding="10">
+                                <buttonConfiguration key="configuration" style="plain" image="login_facebook_logo" title="페이스북으로 계속하기" imagePadding="10" buttonSize="large">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-Fe-Zub">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-Fe-Zub">
                                 <rect key="frame" x="60" y="462" width="294" height="44.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KBw-Fe-Zub" secondAttribute="height" multiplier="20:3" id="WVq-3Q-Lic"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="6" minY="7" maxX="0.0" maxY="5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="apple" title="Apple로 계속하기">
                                     <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="-17" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
@@ -345,14 +346,6 @@
             </objects>
             <point key="canvasLocation" x="-1826" y="-1246"/>
         </scene>
-        <!--TOPViewControllerVC-->
-        <scene sceneID="T1U-dh-dbE">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TOPViewControllerVC" storyboardName="Second" referencedIdentifier="TOPViewControllerVC" id="icX-WW-m2S" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DTR-OM-Pdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-530" y="-1188"/>
-        </scene>
         <!--SecondVC-->
         <scene sceneID="94U-SR-Rl7">
             <objects>
@@ -360,22 +353,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHN-zL-dH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-880" y="-1264"/>
-        </scene>
-        <!--StoryViewControllerVC-->
-        <scene sceneID="Bum-X1-3hD">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="StoryViewControllerVC" storyboardName="Second" referencedIdentifier="StoryViewControllerVC" id="FVe-hk-Te1" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ujI-Zw-E91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-530" y="-1228"/>
-        </scene>
-        <!--EATViewControllerVC-->
-        <scene sceneID="5IS-uG-xHw">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="EATViewControllerVC" storyboardName="Second" referencedIdentifier="EATViewControllerVC" id="Gk6-Yj-aHK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oIC-l4-rOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-537" y="-1264"/>
         </scene>
     </scenes>
     <resources>

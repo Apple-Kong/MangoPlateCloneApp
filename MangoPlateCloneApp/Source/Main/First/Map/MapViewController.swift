@@ -33,11 +33,8 @@ class MapViewController: UIViewController {
         }
         
     }
-    let distanceSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-//    let mark = Marker(
-//             title: "홍대입구역",
-//             subtitle: "사람이 너무 많아요ㅜ",
-//             coordinate: CLLocationCoordinate2D(latitude: 37.55769, longitude: 126.92450))
+    let distanceSpan: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,10 +57,6 @@ class MapViewController: UIViewController {
         }
     }
 }
-
-
-//"x": ["127.06283102249932"],
-//"y": ["37.514322572335935"],
 
 
 

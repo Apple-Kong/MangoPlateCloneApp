@@ -36,6 +36,7 @@
 		C088F55827856A45002382BD /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C088F55727856A45002382BD /* Second.storyboard */; };
 		C08DED0C277876050054A1C4 /* FirstCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */; };
 		C0B275862785704F00C10AE4 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B275852785704F00C10AE4 /* First.storyboard */; };
+		C0B27588278582A500C10AE4 /* EATStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B27587278582A500C10AE4 /* EATStoryBoard.storyboard */; };
 		C0F636AD2774E58F00070CEA /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */; };
 		C0F9AB872783D3B90002DE25 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB862783D3B90002DE25 /* Constant.swift */; };
 		C0F9AB8A2783D4450002DE25 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9AB892783D4450002DE25 /* Key.swift */; };
@@ -115,6 +116,7 @@
 		C088F55727856A45002382BD /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = SOURCE_ROOT; };
 		C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewHeader.swift; sourceTree = "<group>"; };
 		C0B275852785704F00C10AE4 /* First.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		C0B27587278582A500C10AE4 /* EATStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EATStoryBoard.storyboard; path = MangoPlateCloneApp/Source/Main/Second/EAT/EATStoryBoard.storyboard; sourceTree = SOURCE_ROOT; };
 		C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0F9AB862783D3B90002DE25 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C0F9AB892783D4450002DE25 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
@@ -307,17 +309,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C0B27589278582A900C10AE4 /* EAT */ = {
+			isa = PBXGroup;
+			children = (
+				C0B27587278582A500C10AE4 /* EATStoryBoard.storyboard */,
+				C0FC569B27788C210000B753 /* EATViewcontroller.swift */,
+			);
+			path = EAT;
+			sourceTree = "<group>";
+		};
 		C0F636A92774E53600070CEA /* First */ = {
 			isa = PBXGroup;
 			children = (
 				C0B275852785704F00C10AE4 /* First.storyboard */,
-				C088F55E27856D71002382BD /* Model */,
 				C07B305827745D7300BAE73C /* FirstVC.swift */,
 				C088F54727852EB9002382BD /* FirstVC+DataSource.swift */,
 				C088F54927852EF1002382BD /* FirstVC+FlowLayout.swift */,
 				C08DED0B277876050054A1C4 /* FirstCollectionViewHeader.swift */,
 				C0F636AC2774E58F00070CEA /* FirstCollectionViewCell.swift */,
 				C088F55927856BD1002382BD /* Map */,
+				C088F55E27856D71002382BD /* Model */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -388,9 +399,9 @@
 		C0FC569A27788C040000B753 /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				C0B27589278582A900C10AE4 /* EAT */,
 				C088F55727856A45002382BD /* Second.storyboard */,
 				C07B305A27745DBD00BAE73C /* SecondVC.swift */,
-				C0FC569B27788C210000B753 /* EATViewcontroller.swift */,
 				C0FC569D27788C2B0000B753 /* StoryViewController.swift */,
 				C0FC569F27788C360000B753 /* TOPViewController.swift */,
 			);
@@ -512,6 +523,7 @@
 				C02AD0CF2774455B00FB9836 /* Main.storyboard in Resources */,
 				C088F55827856A45002382BD /* Second.storyboard in Resources */,
 				C0F9AB902783D53F0002DE25 /* NotoSansCJKkr-Medium.otf in Resources */,
+				C0B27588278582A500C10AE4 /* EATStoryBoard.storyboard in Resources */,
 				C0F9AB922783D53F0002DE25 /* NotoSansCJKkr-Bold.otf in Resources */,
 				C0B275862785704F00C10AE4 /* First.storyboard in Resources */,
 			);

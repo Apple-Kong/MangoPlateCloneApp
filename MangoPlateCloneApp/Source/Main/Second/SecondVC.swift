@@ -18,9 +18,9 @@ class SecondVC: TabmanViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let vc1 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EATViewControllerVC") as! EATViewControllerVC
-        let vc2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryViewControllerVC") as! StoryViewControllerVC
-        let vc3 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TOPViewControllerVC") as! TOPViewControllerVC
+        let vc1 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EATViewController") as! EATViewController
+        let vc2 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StoryViewController") as! StoryViewController
+        let vc3 = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TOPViewController") as! TOPViewController
         
         
         

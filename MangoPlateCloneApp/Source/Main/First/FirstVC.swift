@@ -22,9 +22,9 @@ class FirstVC: UIViewController {
     var isAvailable = true
     
     //위치정보 관련 변수
-    var currentLocationString: String = "부천시"
-    var x = "126.76335622264729"
-    var y = "37.50482550559047"
+    var currentLocationString: String = "강남구"
+    var x = "127.02776284632832"
+    var y = "37.498229652849226"
     
     let images = [ImageSource(image: UIImage(named: "event_0")!),
                   ImageSource(image: UIImage(named: "event_1")!),
@@ -114,7 +114,7 @@ extension FirstVC {
         
         for (index, detail) in response.documents.enumerated() {
             //각각의 셀에 대해 이미지 요청
-            naverImageDataManager.fetchImage(place_name: detail.place_name) { urlString in
+            naverImageDataManager.fetchImage(place_name: detail.place_name, location: currentLocationString) { urlString in
                 if urlString != "요청실패" {
                     self.dismissIndicator()
                     

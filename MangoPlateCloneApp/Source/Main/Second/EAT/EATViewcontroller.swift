@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EATViewControllerVC: UIViewController {
+class EATViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
